@@ -1,0 +1,88 @@
+aid: nitric
+name: Nitric
+review:
+  question: Does Nitric expose a documented public REST or WebSocket API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Nitric is a framework / infrastructure-from-code
+    SDK and CLI, not a hosted messaging or streaming service. Although Nitric lets
+    developers declare websocket, queue, and topic resources, those are provisioned
+    into the developer's own cloud account and have no single documented Nitric-hosted
+    endpoint or message contract to model. There is therefore no provider-level
+    AsyncAPI surface to author.
+findings:
+  summary: |
+    Nitric is an open-source cloud framework and infrastructure-from-code SDK
+    (TypeScript, Python, Go, Dart) plus CLI, not a hosted REST or WebSocket API.
+    Developers declare resources - APIs, schedules, queues, topics, buckets,
+    key-value stores, secrets, websockets, and SQL databases - in application
+    code, and Nitric provisions them on AWS, Google Cloud, or Azure via pluggable
+    Pulumi or Terraform providers. The developer-facing interface is the SDK plus
+    the CLI (nitric new / start / stack new / up / down), not a network API hosted
+    by Nitric. Any REST or WebSocket endpoints that exist are application-specific
+    and run in the developer's own cloud account, so there is no public, hosted
+    Nitric API to document. The project is licensed Apache 2.0 and is free; cost
+    is whatever the target cloud charges for provisioned resources.
+  interfaceType: Framework / Infrastructure-from-Code SDK + CLI (not REST, not WebSocket)
+  transports:
+    - protocol: SDK
+      scheme: in-process
+      note: TypeScript, Python, Go, and Dart libraries used to declare resources and write handlers.
+      documented: true
+    - protocol: CLI
+      scheme: local
+      note: nitric CLI scaffolds, runs local emulation, and deploys/tears down via a provider.
+      documented: true
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: Nitric does not host a public REST API. APIs you build with the API resource are deployed to your own cloud and are application-specific.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: Nitric provides a websocket resource primitive, but the resulting endpoint is provisioned in the developer's own cloud; Nitric hosts no documented websocket API.
+  resourcesPrimitives:
+    - API
+    - Schedule
+    - Queue
+    - Topic
+    - Bucket
+    - Key-Value Store
+    - Secret
+    - Websocket
+    - SQL Database
+    - Batch Job
+  deploymentTargets:
+    - AWS
+    - Google Cloud
+    - Azure
+  providers:
+    - Pulumi (direct deploy)
+    - Terraform (generated config)
+    - Custom (any language)
+  license: Apache-2.0
+sources:
+  - url: https://nitric.io
+    type: Website
+    note: Positions Nitric as infrastructure-from-code; declare resources in code and deploy to any cloud.
+  - url: https://nitric.io/docs
+    type: Documentation
+    note: Documents resources (APIs, schedules, queues, topics, buckets, key-value, secrets, websockets, SQL), the CLI, and provider plugins.
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+    note: Open-source framework repository, Apache 2.0 licensed.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    Nitric is a framework / IaC SDK + CLI, not a REST or WebSocket API, and no
+    AsyncAPI was authored. apis.yml documents the Nitric resource primitives, CLI,
+    and provider plugins with an accurate framework/IaC interface type, and the
+    OpenAPI document declares no paths (paths: {}) because Nitric hosts no public
+    REST endpoints to model.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,255 @@
+aid: nitric
+url: https://raw.githubusercontent.com/api-evangelist/nitric/refs/heads/main/apis.yml
+name: Nitric
+kind: company
+description: Nitric is an open-source cloud framework and infrastructure-from-code SDK
+  plus CLI for building cloud applications in TypeScript, Python, Go, or Dart. You
+  declare resources - APIs, schedules, queues, topics, buckets, key-value stores,
+  secrets, and websockets - directly in your application code, and Nitric provisions
+  them across AWS, Google Cloud, or Azure via pluggable Pulumi or Terraform providers.
+  Nitric is a framework / IaC tool, not a hosted REST API - the APIs you build are
+  deployed to your own cloud.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Infrastructure from Code
+- Cloud Framework
+- SDK
+- CLI
+- Serverless
+- Multi-Cloud
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: nitric:nitric-api-resource
+  name: Nitric API Resource
+  tags:
+  - APIs
+  - HTTP
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/apis
+  baseURL: https://nitric.io/docs/apis
+  properties:
+  - url: https://nitric.io/docs/apis
+    type: Documentation
+  - url: https://nitric.io/docs/reference
+    type: APIReference
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring HTTP APIs and routes in code. Nitric provisions
+    the API gateway (e.g. AWS API Gateway, GCP API Gateway, Azure API Management) and
+    wires routes to your handlers. This is a framework primitive, not a hosted Nitric
+    endpoint - the resulting API runs in your own cloud account.
+- aid: nitric:nitric-schedule-resource
+  name: Nitric Schedule Resource
+  tags:
+  - Schedules
+  - Cron
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/schedules
+  baseURL: https://nitric.io/docs/schedules
+  properties:
+  - url: https://nitric.io/docs/schedules
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring time-based and cron schedules in code. Nitric
+    provisions the underlying scheduler in your target cloud and triggers your handler
+    on the defined cadence. Framework primitive, not a hosted API.
+- aid: nitric:nitric-queue-resource
+  name: Nitric Queue Resource
+  tags:
+  - Queues
+  - Messaging
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/queues
+  baseURL: https://nitric.io/docs/queues
+  properties:
+  - url: https://nitric.io/docs/queues
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring durable message queues for batch and deferred
+    processing. Nitric maps it to a cloud queue service (e.g. AWS SQS) with enqueue
+    and dequeue semantics. Framework primitive, not a hosted API.
+- aid: nitric:nitric-topic-resource
+  name: Nitric Topic Resource
+  tags:
+  - Topics
+  - Pub/Sub
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/messaging
+  baseURL: https://nitric.io/docs/messaging
+  properties:
+  - url: https://nitric.io/docs/messaging
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring publish/subscribe topics for event-driven
+    architectures. Nitric provisions the cloud pub/sub service (e.g. AWS SNS, GCP
+    Pub/Sub) and wires subscribers to handlers. Framework primitive, not a hosted API.
+- aid: nitric:nitric-bucket-resource
+  name: Nitric Bucket Resource
+  tags:
+  - Buckets
+  - Storage
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/storage
+  baseURL: https://nitric.io/docs/storage
+  properties:
+  - url: https://nitric.io/docs/storage
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring object/file storage buckets with read, write,
+    delete, signed URLs, and bucket-event triggers. Nitric maps it to cloud storage
+    (e.g. AWS S3, GCS, Azure Blob). Framework primitive, not a hosted API.
+- aid: nitric:nitric-keyvalue-resource
+  name: Nitric Key-Value Resource
+  tags:
+  - Key-Value
+  - Data Store
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/keyvalue
+  baseURL: https://nitric.io/docs/keyvalue
+  properties:
+  - url: https://nitric.io/docs/keyvalue
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring key-value stores with get, set, delete, and
+    query operations. Nitric maps it to a cloud key-value service (e.g. AWS DynamoDB).
+    Framework primitive, not a hosted API.
+- aid: nitric:nitric-secret-resource
+  name: Nitric Secret Resource
+  tags:
+  - Secrets
+  - Security
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/secrets
+  baseURL: https://nitric.io/docs/secrets
+  properties:
+  - url: https://nitric.io/docs/secrets
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring and accessing secrets with versioning. Nitric
+    maps it to a cloud secrets manager (e.g. AWS Secrets Manager). Framework primitive,
+    not a hosted API.
+- aid: nitric:nitric-websocket-resource
+  name: Nitric Websocket Resource
+  tags:
+  - Websockets
+  - Realtime
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/websockets
+  baseURL: https://nitric.io/docs/websockets
+  properties:
+  - url: https://nitric.io/docs/websockets
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring realtime bidirectional websocket endpoints
+    with connect, disconnect, and message handlers. Nitric provisions the cloud
+    websocket service. Framework primitive, not a hosted API.
+- aid: nitric:nitric-sql-resource
+  name: Nitric SQL Database Resource
+  tags:
+  - SQL
+  - Databases
+  - Framework
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/sql
+  baseURL: https://nitric.io/docs/sql
+  properties:
+  - url: https://nitric.io/docs/sql
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: SDK resource for declaring managed relational (Postgres) databases with
+    migrations. Nitric provisions the cloud database (e.g. AWS RDS, GCP Cloud SQL).
+    Framework primitive, not a hosted API.
+- aid: nitric:nitric-cli
+  name: Nitric CLI
+  tags:
+  - CLI
+  - Tooling
+  - Deployment
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/reference/cli
+  baseURL: https://nitric.io/docs/reference/cli
+  properties:
+  - url: https://nitric.io/docs/reference/cli
+    type: Documentation
+  - url: https://github.com/nitrictech/cli
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: The Nitric command-line tool (nitric new, nitric start, nitric stack
+    new, nitric up, nitric down) that scaffolds projects, runs local emulation with
+    a dashboard, and deploys or tears down infrastructure via a configured provider.
+    This is local developer tooling, not a hosted API.
+- aid: nitric:nitric-provider-plugins
+  name: Nitric Provider Plugins
+  tags:
+  - Providers
+  - Pulumi
+  - Terraform
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://nitric.io/docs/providers
+  baseURL: https://nitric.io/docs/providers
+  properties:
+  - url: https://nitric.io/docs/providers
+    type: Documentation
+  - url: https://github.com/nitrictech/nitric
+    type: GitHub
+  - url: openapi/nitric-openapi.yml
+    type: OpenAPI
+  description: Pluggable provider implementations that translate declared Nitric
+    resources into cloud infrastructure on AWS, Google Cloud, or Azure using Pulumi
+    (direct deploy) or Terraform (generated config). Custom providers can be authored
+    in any language. Framework/IaC component, not a hosted API.
+common:
+- type: GitHubOrganization
+  url: https://github.com/nitrictech
+- type: LinkedIn
+  url: https://www.linkedin.com/company/nitric
+- type: Website
+  url: https://nitric.io/
+- type: Documentation
+  url: https://nitric.io/docs
+- type: Plans
+  url: plans/nitric-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/nitric-rate-limits.yml
+- type: FinOps
+  url: finops/nitric-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

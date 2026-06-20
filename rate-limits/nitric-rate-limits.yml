@@ -1,0 +1,58 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Nitric
+providerId: nitric
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Infrastructure from Code
+- Cloud Framework
+- SDK
+- CLI
+- Rate Limiting
+- Quotas
+description: >-
+  Nitric is a framework / IaC SDK and CLI, not a hosted API, so Nitric itself
+  imposes no API rate limits or quotas. Any throttling experienced by an
+  application built with Nitric comes from the underlying cloud services that
+  the chosen provider plugin provisions - for example AWS API Gateway request
+  quotas, SQS throughput limits, DynamoDB capacity, or cloud-account service
+  quotas on AWS, Google Cloud, or Azure. Specific limits depend entirely on the
+  target cloud and the resources declared, and are not reconciled in this
+  artifact.
+notes: >-
+  No Nitric-level rate limits exist. On reconciliation, document the relevant
+  per-service quotas of the target cloud provider (e.g. AWS API Gateway, SQS,
+  SNS, S3, DynamoDB) used by the deployed resources.
+sources:
+- https://nitric.io/docs
+- https://github.com/nitrictech/nitric
+responseCodes:
+  throttled: 429
+limits:
+- name: Framework Rate Limits
+  scope: framework
+  metric: requests
+  limit: not applicable
+  notes: Nitric is an SDK/CLI; it does not meter or throttle API calls itself.
+- name: Cloud Provider Service Quotas
+  scope: account
+  metric: requests
+  limit: see target cloud documentation
+  notes: >-
+    Throttling derives from the provisioned cloud services (e.g. AWS API
+    Gateway, SQS, SNS, DynamoDB) and the cloud account's service quotas.
+policies:
+- name: Cloud-Native Quotas
+  description: >-
+    Effective limits are defined by the target cloud provider's service quotas
+    for the resources Nitric provisions, not by Nitric.
+- name: Backoff Strategy
+  description: >-
+    Applications should implement exponential backoff with jitter and honor
+    Retry-After when calling provisioned cloud services that return 429.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,127 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Nitric Framework",
+    "version": "0.19",
+    "description": "Nitric is a framework / infrastructure-from-code SDK and CLI, not a hosted REST API. This collection documents the developer interface (CLI and resource primitives) for reference only - there are no Nitric-hosted HTTP endpoints to call. APIs you build with Nitric are deployed to your own cloud (AWS, Google Cloud, or Azure)."
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CLI",
+        "type": "folder",
+        "description": "Nitric command-line tooling. These are local commands, not HTTP requests."
+      },
+      "items": [
+        {
+          "info": {
+            "name": "nitric new",
+            "type": "docs"
+          },
+          "docs": "Scaffold a new Nitric project from a template."
+        },
+        {
+          "info": {
+            "name": "nitric start",
+            "type": "docs"
+          },
+          "docs": "Run the application locally with resource emulation and a dashboard."
+        },
+        {
+          "info": {
+            "name": "nitric stack new",
+            "type": "docs"
+          },
+          "docs": "Create a deployment target (stack) configuration for a cloud provider."
+        },
+        {
+          "info": {
+            "name": "nitric up",
+            "type": "docs"
+          },
+          "docs": "Deploy the project to the configured provider (AWS, Google Cloud, or Azure)."
+        },
+        {
+          "info": {
+            "name": "nitric down",
+            "type": "docs"
+          },
+          "docs": "Tear down the deployed infrastructure."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Resources",
+        "type": "folder",
+        "description": "Framework resource primitives declared in code (TypeScript, Python, Go, Dart) and provisioned to your own cloud. Not Nitric-hosted endpoints."
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API",
+            "type": "docs"
+          },
+          "docs": "Declare HTTP APIs and routes; provisioned as a cloud API gateway."
+        },
+        {
+          "info": {
+            "name": "Schedule",
+            "type": "docs"
+          },
+          "docs": "Declare time-based / cron schedules."
+        },
+        {
+          "info": {
+            "name": "Queue",
+            "type": "docs"
+          },
+          "docs": "Declare durable message queues."
+        },
+        {
+          "info": {
+            "name": "Topic",
+            "type": "docs"
+          },
+          "docs": "Declare publish/subscribe topics."
+        },
+        {
+          "info": {
+            "name": "Bucket",
+            "type": "docs"
+          },
+          "docs": "Declare object/file storage buckets."
+        },
+        {
+          "info": {
+            "name": "Key-Value Store",
+            "type": "docs"
+          },
+          "docs": "Declare key-value stores."
+        },
+        {
+          "info": {
+            "name": "Secret",
+            "type": "docs"
+          },
+          "docs": "Declare and access versioned secrets."
+        },
+        {
+          "info": {
+            "name": "Websocket",
+            "type": "docs"
+          },
+          "docs": "Declare realtime bidirectional websocket endpoints."
+        },
+        {
+          "info": {
+            "name": "SQL Database",
+            "type": "docs"
+          },
+          "docs": "Declare managed relational (Postgres) databases with migrations."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

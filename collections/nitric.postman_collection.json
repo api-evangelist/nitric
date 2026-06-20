@@ -1,0 +1,91 @@
+{
+  "info": {
+    "name": "Nitric Framework",
+    "description": "Nitric is a framework / infrastructure-from-code SDK and CLI, not a hosted REST API. This collection documents the developer interface (CLI commands and resource primitives) for reference only - there are no Nitric-hosted HTTP endpoints to call. APIs you build with Nitric are deployed to your own cloud (AWS, Google Cloud, or Azure).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "CLI",
+      "description": "Nitric command-line tooling. These are local commands, not HTTP requests.",
+      "item": [
+        {
+          "name": "nitric new",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://nitric.io/docs/reference/cli",
+              "protocol": "https",
+              "host": ["nitric", "io"],
+              "path": ["docs", "reference", "cli"]
+            },
+            "description": "Scaffold a new Nitric project from a template (local command)."
+          }
+        },
+        {
+          "name": "nitric start",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://nitric.io/docs/reference/cli",
+              "protocol": "https",
+              "host": ["nitric", "io"],
+              "path": ["docs", "reference", "cli"]
+            },
+            "description": "Run locally with resource emulation and a dashboard (local command)."
+          }
+        },
+        {
+          "name": "nitric up",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://nitric.io/docs/reference/cli",
+              "protocol": "https",
+              "host": ["nitric", "io"],
+              "path": ["docs", "reference", "cli"]
+            },
+            "description": "Deploy to the configured cloud provider (local command)."
+          }
+        },
+        {
+          "name": "nitric down",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://nitric.io/docs/reference/cli",
+              "protocol": "https",
+              "host": ["nitric", "io"],
+              "path": ["docs", "reference", "cli"]
+            },
+            "description": "Tear down deployed infrastructure (local command)."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "description": "Framework resource primitives declared in code and provisioned to your own cloud. Not Nitric-hosted endpoints.",
+      "item": [
+        {
+          "name": "Resource Reference",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://nitric.io/docs",
+              "protocol": "https",
+              "host": ["nitric", "io"],
+              "path": ["docs"]
+            },
+            "description": "APIs, schedules, queues, topics, buckets, key-value stores, secrets, websockets, and SQL databases are declared in TypeScript, Python, Go, or Dart and provisioned to AWS, Google Cloud, or Azure."
+          }
+        }
+      ]
+    }
+  ]
+}

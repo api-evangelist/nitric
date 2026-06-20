@@ -1,0 +1,98 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Nitric
+providerId: nitric
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Infrastructure from Code
+- Cloud Framework
+- SDK
+- CLI
+- Open Source
+- Plans
+description: >-
+  Nitric is open-source software licensed under Apache 2.0 and is free to use -
+  the framework, SDKs, and CLI carry no subscription or usage fee. There are no
+  Nitric pricing tiers for the core framework; you only pay your target cloud
+  provider (AWS, Google Cloud, or Azure) for the resources your application
+  actually provisions and runs. A separate commercial offering (Suga / Nitric
+  Cloud) exists in the Nitric ecosystem, but its specific plans and pricing are
+  not reconciled in this artifact.
+notes: >-
+  Open-source and free under Apache 2.0; real cost is whatever your target cloud
+  charges for the provisioned resources. Verify any commercial Suga / Nitric
+  Cloud tiers and pricing directly with Nitric during reconciliation.
+sources:
+- https://nitric.io
+- https://nitric.io/docs
+- https://github.com/nitrictech/nitric
+plans:
+- id: nitric-open-source
+  name: Open Source (Apache 2.0)
+  type: free
+  description: >-
+    The Nitric framework, language SDKs (TypeScript, Python, Go, Dart), CLI, and
+    provider plugins are free and open source under the Apache 2.0 license. No
+    fee is charged by Nitric; you pay only your underlying cloud provider for
+    deployed resources.
+  entries:
+  - label: Framework, SDKs, CLI, Providers
+    name: open_source
+    type: free
+    metric: license
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $0 (Apache 2.0)
+    userMultiplied: false
+  - label: Underlying Cloud Resources
+    name: cloud_resources
+    type: usage
+    metric: cloud_charges
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: pass-through - billed by your AWS / Google Cloud / Azure account
+    userMultiplied: false
+  elements:
+  - name: APIs
+  - name: Schedules
+  - name: Queues
+  - name: Topics
+  - name: Buckets
+  - name: Key-Value Stores
+  - name: Secrets
+  - name: Websockets
+  - name: SQL Databases
+  - name: CLI
+  - name: Provider Plugins
+- id: nitric-cloud
+  name: Suga / Nitric Cloud
+  type: enterprise
+  description: >-
+    A separate commercial platform in the Nitric ecosystem (Suga / Nitric Cloud)
+    offering fast deployments, infrastructure visualization, and built-in
+    observability and security. Specific plans and pricing are not reconciled
+    here; contact Nitric.
+  entries:
+  - label: Commercial Platform
+    name: nitric_cloud
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: see Nitric (not reconciled)
+    userMultiplied: false
+  elements:
+  - name: Managed Deployments
+  - name: Observability
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
