@@ -236,6 +236,8 @@ apis:
     (direct deploy) or Terraform (generated config). Custom providers can be authored
     in any language. Framework/IaC component, not a hosted API.
 common:
+- type: DomainSecurity
+  url: security/nitric-domain-security.yml
 - type: GitHubOrganization
   url: https://github.com/nitrictech
 - type: LinkedIn
