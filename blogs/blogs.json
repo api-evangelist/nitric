@@ -1,0 +1,13 @@
+{
+  "repo": "nitric",
+  "feeds": [
+    {
+      "source": "https://nitric.io/rss.xml",
+      "feed_url": "https://nitric.io/rss.xml",
+      "title": "Blog - Nitric",
+      "saved": 25
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 50
+}
