@@ -1,0 +1,14 @@
+{
+  "provider": "nitric",
+  "sources": [
+    "nitric-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived nitric-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
