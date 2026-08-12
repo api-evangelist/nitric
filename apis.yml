@@ -49,7 +49,7 @@ apis:
     type: APIReference
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring HTTP APIs and routes in code. Nitric provisions
     the API gateway (e.g. AWS API Gateway, GCP API Gateway, Azure API Management) and
@@ -69,7 +69,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring time-based and cron schedules in code. Nitric
     provisions the underlying scheduler in your target cloud and triggers your handler
@@ -88,7 +88,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring durable message queues for batch and deferred
     processing. Nitric maps it to a cloud queue service (e.g. AWS SQS) with enqueue
@@ -107,7 +107,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring publish/subscribe topics for event-driven
     architectures. Nitric provisions the cloud pub/sub service (e.g. AWS SNS, GCP
@@ -126,7 +126,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring object/file storage buckets with read, write,
     delete, signed URLs, and bucket-event triggers. Nitric maps it to cloud storage
@@ -145,7 +145,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring key-value stores with get, set, delete, and
     query operations. Nitric maps it to a cloud key-value service (e.g. AWS DynamoDB).
@@ -164,7 +164,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring and accessing secrets with versioning. Nitric
     maps it to a cloud secrets manager (e.g. AWS Secrets Manager). Framework primitive,
@@ -183,7 +183,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring realtime bidirectional websocket endpoints
     with connect, disconnect, and message handlers. Nitric provisions the cloud
@@ -202,7 +202,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: SDK resource for declaring managed relational (Postgres) databases with
     migrations. Nitric provisions the cloud database (e.g. AWS RDS, GCP Cloud SQL).
@@ -221,7 +221,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/cli
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: The Nitric command-line tool (nitric new, nitric start, nitric stack
     new, nitric up, nitric down) that scaffolds projects, runs local emulation with
@@ -241,7 +241,7 @@ apis:
     type: Documentation
   - url: https://github.com/nitrictech/nitric
     type: GitHub
-  - url: openapi/nitric-openapi.yml
+  - url: openapi/_original/nitric-openapi.yml
     type: OpenAPI
   description: Pluggable provider implementations that translate declared Nitric
     resources into cloud infrastructure on AWS, Google Cloud, or Azure using Pulumi
