@@ -36,6 +36,9 @@ apis:
 - aid: nitric:nitric-api-resource
   name: Nitric API Resource
   tags:
+  - HTTP
+  - Framework
+  tags_raw:
   - APIs
   - HTTP
   - Framework
@@ -97,6 +100,10 @@ apis:
   name: Nitric Topic Resource
   tags:
   - Topics
+  - Pub-Sub
+  - Framework
+  tags_raw:
+  - Topics
   - Pub/Sub
   - Framework
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -135,6 +142,10 @@ apis:
   name: Nitric Key-Value Resource
   tags:
   - Key-Value
+  - Datastore
+  - Framework
+  tags_raw:
+  - Key-Value
   - Data Store
   - Framework
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -172,6 +183,10 @@ apis:
 - aid: nitric:nitric-websocket-resource
   name: Nitric Websocket Resource
   tags:
+  - WebSockets
+  - Real-Time
+  - Framework
+  tags_raw:
   - Websockets
   - Realtime
   - Framework
