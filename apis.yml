@@ -111,7 +111,7 @@ apis:
   name: Nitric Topic Resource
   tags:
   - Topics
-  - Pub-Sub
+  - Pub/Sub
   - Framework
   tags_raw:
   - Topics
@@ -153,7 +153,7 @@ apis:
   name: Nitric Key-Value Resource
   tags:
   - Key-Value
-  - Datastore
+  - Data Store
   - Framework
   tags_raw:
   - Key-Value
@@ -194,7 +194,7 @@ apis:
 - aid: nitric:nitric-websocket-resource
   name: Nitric Websocket Resource
   tags:
-  - WebSockets
+  - Websockets
   - Real-Time
   - Framework
   tags_raw:
