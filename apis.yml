@@ -72,6 +72,10 @@ apis:
 - aid: nitric:nitric-schedule-resource
   name: Nitric Schedule Resource
   tags:
+  - Schedule
+  - Cron
+  - Framework
+  tags_raw:
   - Schedules
   - Cron
   - Framework
@@ -110,7 +114,7 @@ apis:
 - aid: nitric:nitric-topic-resource
   name: Nitric Topic Resource
   tags:
-  - Topics
+  - Topic
   - Pub-Sub
   - Framework
   tags_raw:
@@ -194,7 +198,7 @@ apis:
 - aid: nitric:nitric-websocket-resource
   name: Nitric Websocket Resource
   tags:
-  - WebSockets
+  - WebSocket
   - Real-Time
   - Framework
   tags_raw:
@@ -217,6 +221,10 @@ apis:
 - aid: nitric:nitric-sql-resource
   name: Nitric SQL Database Resource
   tags:
+  - SQL
+  - Database
+  - Framework
+  tags_raw:
   - SQL
   - Databases
   - Framework
