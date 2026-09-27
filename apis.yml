@@ -10,15 +10,21 @@ description: Nitric is an open-source cloud framework and infrastructure-from-co
   Nitric is a framework / IaC tool, not a hosted REST API - the APIs you build are
   deployed to your own cloud.
 deliveryModel:
-  model: saas
-  open_source: false
+  model: open-core
+  license: Apache-2.0
+  license_evidence:
+    repo: nitrictech/nitric
+    spdx: Apache-2.0
+    stars: 2016
+  open_source: true
   commercial: true
   callable_host: false
-  label: Hosted service · you call their endpoint
+  label: Open core · an OSS project plus a commercial hosted product
   confidence: medium
   source:
   - pricing
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -156,7 +162,7 @@ apis:
 - aid: nitric:nitric-keyvalue-resource
   name: Nitric Key-Value Resource
   tags:
-  - Key-Value
+  - Key-Value Store
   - Datastore
   - Framework
   tags_raw:
