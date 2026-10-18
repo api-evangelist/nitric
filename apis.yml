@@ -121,7 +121,7 @@ apis:
   name: Nitric Topic Resource
   tags:
   - Topic
-  - Pub-Sub
+  - Pub/Sub
   - Framework
   tags_raw:
   - Topics
