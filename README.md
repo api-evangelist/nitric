@@ -1,4 +1,4 @@
-# Nitric (nitric)
+# Nitric
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,267 +66,117 @@
 
 Nitric is an open-source cloud framework and infrastructure-from-code SDK plus CLI for building cloud applications in TypeScript, Python, Go, or Dart. You declare resources - APIs, schedules, queues, topics, buckets, key-value stores, secrets, and websockets - directly in your application code, and Nitric provisions them across AWS, Google Cloud, or Azure via pluggable Pulumi or Terraform providers. Nitric is a framework / IaC tool, not a hosted REST API - the APIs you build are deployed to your own cloud.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/nitric/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/nitric/refs/heads/main/apis.yml)
+**Areas:** Infrastructure from Code · Cloud Framework · SDK · CLI · Serverless · Multi-Cloud
 
-## Tags
+## Nitric on APIs.io
 
-- Infrastructure from Code
-- Cloud Framework
-- SDK
-- CLI
-- Serverless
-- Multi-Cloud
+Everything profiled for Nitric is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nitric/](https://apis.io/providers/nitric/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (11)
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+- [Nitric API Resource](https://apis.io/apis/nitric/nitric-api-resource/) — SDK resource for declaring HTTP APIs and routes in code. Nitric provisions the API gateway (e.g. AWS API Gateway, GCP API Gateway, Azure API Management) and…
+- [Nitric Schedule Resource](https://apis.io/apis/nitric/nitric-schedule-resource/) — SDK resource for declaring time-based and cron schedules in code. Nitric provisions the underlying scheduler in your target cloud and triggers your handler…
+- [Nitric Queue Resource](https://apis.io/apis/nitric/nitric-queue-resource/) — SDK resource for declaring durable message queues for batch and deferred processing. Nitric maps it to a cloud queue service (e.g. AWS SQS) with enqueue and…
+- [Nitric Topic Resource](https://apis.io/apis/nitric/nitric-topic-resource/) — SDK resource for declaring publish/subscribe topics for event-driven architectures. Nitric provisions the cloud pub/sub service (e.g. AWS SNS, GCP Pub/Sub)…
+- [Nitric Bucket Resource](https://apis.io/apis/nitric/nitric-bucket-resource/) — SDK resource for declaring object/file storage buckets with read, write, delete, signed URLs, and bucket-event triggers. Nitric maps it to cloud storage…
+- [Nitric Key-Value Resource](https://apis.io/apis/nitric/nitric-keyvalue-resource/) — SDK resource for declaring key-value stores with get, set, delete, and query operations. Nitric maps it to a cloud key-value service (e.g. AWS DynamoDB).…
+- [Nitric Secret Resource](https://apis.io/apis/nitric/nitric-secret-resource/) — SDK resource for declaring and accessing secrets with versioning. Nitric maps it to a cloud secrets manager (e.g. AWS Secrets Manager). Framework primitive,…
+- [Nitric Websocket Resource](https://apis.io/apis/nitric/nitric-websocket-resource/) — SDK resource for declaring realtime bidirectional websocket endpoints with connect, disconnect, and message handlers. Nitric provisions the cloud websocket…
+- [Nitric SQL Database Resource](https://apis.io/apis/nitric/nitric-sql-resource/) — SDK resource for declaring managed relational (Postgres) databases with migrations. Nitric provisions the cloud database (e.g. AWS RDS, GCP Cloud SQL).…
+- [Nitric CLI](https://apis.io/apis/nitric/nitric-cli/) — The Nitric command-line tool (nitric new, nitric start, nitric stack new, nitric up, nitric down) that scaffolds projects, runs local emulation with a…
+- [Nitric Provider Plugins](https://apis.io/apis/nitric/nitric-provider-plugins/) — Pluggable provider implementations that translate declared Nitric resources into cloud infrastructure on AWS, Google Cloud, or Azure using Pulumi (direct…
 
-## APIs
+### Published properties
 
-### Nitric API Resource
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-SDK resource for declaring HTTP APIs and routes in code. Nitric provisions the API gateway (e.g. AWS API Gateway, GCP API Gateway, Azure API Management) and wires routes to your handlers. This is a framework primitive, not a hosted Nitric endpoint - the resulting API runs in your own cloud account.
+#### Collections (1)
 
-- **Human URL:** [https://nitric.io/docs/apis](https://nitric.io/docs/apis)
-- **Base URL:** `https://nitric.io/docs/apis`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Nitric Framework](https://apis.io/collections/nitric/open-nitric/)
 
-- APIs
-- HTTP
-- Framework
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://nitric.io/docs/apis)
-- [API Reference](https://nitric.io/docs/reference)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Nitric Domain Security](https://apis.io/security/nitric/nitric-domain-security/)
 
-### Nitric Schedule Resource
+#### Plans and pricing (1)
 
-SDK resource for declaring time-based and cron schedules in code. Nitric provisions the underlying scheduler in your target cloud and triggers your handler on the defined cadence. Framework primitive, not a hosted API.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://nitric.io/docs/schedules](https://nitric.io/docs/schedules)
-- **Base URL:** `https://nitric.io/docs/schedules`
+- [Nitric Plans Pricing](https://apis.io/plans/nitric/nitric-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Schedules
-- Cron
-- Framework
+Published request limits.
 
-#### Properties
+- [Nitric Rate Limits](https://apis.io/rate-limits/nitric/nitric-rate-limits/)
 
-- [Documentation](https://nitric.io/docs/schedules)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Nitric Queue Resource
+What the API costs to run, by operation.
 
-SDK resource for declaring durable message queues for batch and deferred processing. Nitric maps it to a cloud queue service (e.g. AWS SQS) with enqueue and dequeue semantics. Framework primitive, not a hosted API.
+- [Nitric Finops](https://apis.io/finops/nitric/nitric-finops/)
 
-- **Human URL:** [https://nitric.io/docs/queues](https://nitric.io/docs/queues)
-- **Base URL:** `https://nitric.io/docs/queues`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Queues
-- Messaging
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/queues)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Topic Resource
-
-SDK resource for declaring publish/subscribe topics for event-driven architectures. Nitric provisions the cloud pub/sub service (e.g. AWS SNS, GCP Pub/Sub) and wires subscribers to handlers. Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/messaging](https://nitric.io/docs/messaging)
-- **Base URL:** `https://nitric.io/docs/messaging`
-
-#### Tags
-
-- Topics
-- Pub/Sub
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/messaging)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Bucket Resource
-
-SDK resource for declaring object/file storage buckets with read, write, delete, signed URLs, and bucket-event triggers. Nitric maps it to cloud storage (e.g. AWS S3, GCS, Azure Blob). Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/storage](https://nitric.io/docs/storage)
-- **Base URL:** `https://nitric.io/docs/storage`
-
-#### Tags
-
-- Buckets
-- Storage
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/storage)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Key-Value Resource
-
-SDK resource for declaring key-value stores with get, set, delete, and query operations. Nitric maps it to a cloud key-value service (e.g. AWS DynamoDB). Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/keyvalue](https://nitric.io/docs/keyvalue)
-- **Base URL:** `https://nitric.io/docs/keyvalue`
-
-#### Tags
-
-- Key-Value
-- Data Store
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/keyvalue)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Secret Resource
-
-SDK resource for declaring and accessing secrets with versioning. Nitric maps it to a cloud secrets manager (e.g. AWS Secrets Manager). Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/secrets](https://nitric.io/docs/secrets)
-- **Base URL:** `https://nitric.io/docs/secrets`
-
-#### Tags
-
-- Secrets
-- Security
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/secrets)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Websocket Resource
-
-SDK resource for declaring realtime bidirectional websocket endpoints with connect, disconnect, and message handlers. Nitric provisions the cloud websocket service. Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/websockets](https://nitric.io/docs/websockets)
-- **Base URL:** `https://nitric.io/docs/websockets`
-
-#### Tags
-
-- Websockets
-- Realtime
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/websockets)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric SQL Database Resource
-
-SDK resource for declaring managed relational (Postgres) databases with migrations. Nitric provisions the cloud database (e.g. AWS RDS, GCP Cloud SQL). Framework primitive, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/sql](https://nitric.io/docs/sql)
-- **Base URL:** `https://nitric.io/docs/sql`
-
-#### Tags
-
-- SQL
-- Databases
-- Framework
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/sql)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric CLI
-
-The Nitric command-line tool (nitric new, nitric start, nitric stack new, nitric up, nitric down) that scaffolds projects, runs local emulation with a dashboard, and deploys or tears down infrastructure via a configured provider. This is local developer tooling, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/reference/cli](https://nitric.io/docs/reference/cli)
-- **Base URL:** `https://nitric.io/docs/reference/cli`
-
-#### Tags
-
-- CLI
-- Tooling
-- Deployment
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/reference/cli)
-- [GitHub](https://github.com/nitrictech/cli)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Nitric Provider Plugins
-
-Pluggable provider implementations that translate declared Nitric resources into cloud infrastructure on AWS, Google Cloud, or Azure using Pulumi (direct deploy) or Terraform (generated config). Custom providers can be authored in any language. Framework/IaC component, not a hosted API.
-
-- **Human URL:** [https://nitric.io/docs/providers](https://nitric.io/docs/providers)
-- **Base URL:** `https://nitric.io/docs/providers`
-
-#### Tags
-
-- Providers
-- Pulumi
-- Terraform
-
-#### Properties
-
-- [Documentation](https://nitric.io/docs/providers)
-- [GitHub](https://github.com/nitrictech/nitric)
-- [OpenAPI](openapi/nitric-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/nitric.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/nitric.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/nitrictech)
-- [LinkedIn](https://www.linkedin.com/company/nitric)
 - [Website](https://nitric.io/)
 - [Documentation](https://nitric.io/docs)
-- [Plans](plans/nitric-plans-pricing.yml)
-- [Rate Limits](rate-limits/nitric-rate-limits.yml)
-- [Fin Ops](finops/nitric-finops.yml)
+- [GitHub](https://github.com/nitrictech)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 16.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 25.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 5.3 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nitric/](https://apis.io/providers/nitric/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Nitric: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nitric/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
